@@ -1,0 +1,73 @@
+PENJELASAN :
+package manusiaaa;				>>package bernama " manusiaaa "
+			
+public class Manusiaaa {			>>class bernama manusiaaa bersifat public.
+
+  public static void main(String[] args) {	
+   ayah setia = new ayah();			>>membuat objek bernama " setia " bertipe ayah.
+   ibu penyayang = new ibu();			>>membuat objek bernama " penyayang " bertipe ibu.
+   anak berbakti = new anak();			>>membuat objek bernama " berbakti " bertipe anak.
+           
+   setia.pekerja();				>>untuk menampilkan dari void "pekerjaan" yang berada di class "manusiaaa"
+   setia.olahraga();				>>untuk menampilkan dari void "olahraga" yang yang berada di class"manusiaaa"
+   penyayang.penyayang();			>>untuk menampilkan dari void "penyayang" yang berada di class "manusiaaa"
+   penyayang.hoby();				>>untuk menampilkan dari void "hoby" yang berada di class "manusiaaa"
+   berbakti.tugas();				>>untuk menampilkan dari void "tugas" yang berada di class "manusiaaa"
+   berbakti.lakiLaki();				>>untuk menampilkan dari void "lakiLaki" yang berada di class "manusiaaa"
+   berbakti.perempuan();			>>untuk menampilkan dari void "perempuan" yang berada di class "manusiaaa"
+           
+    }
+    
+}
+
+@ayah
+package manusiaaa;				>>package manusiaaa
+
+public class ayah {				>>deklarasi kelas ayah
+void pekerja (){				>>method pekerja
+    System.out.println("berwibawa");		>>menampilkan
+    System.out.println("sayang anak");		>>menampilkan
+}  
+void olahraga (){				>>method olahraga
+    System.out.println("bulutangkis");		>>menampilkan
+    System.out.println("sepak bola");		>>menampilkan
+
+   }
+
+}
+
+@ibu
+package manusiaaa;						>>package manusiaaa
+
+public class ibu extends ayah {					>>deklarasi kelas ibu
+ void penyayang(){						>>method pekerja
+     System.out.println("ibu rumah tangga");			>>menanpilkan
+     System.out.println("selalu mengutamakan keluarga");	>>menanpilkan
+ }  
+ void hoby(){							>>method hoby
+     System.out.println("memasak");				>>menanpilkan
+     System.out.println("senam");				>>menanpilkan
+   }
+
+}
+
+@anak
+package manusiaaa;						>>package manusia
+
+public class anak extends ayah {				>>deklarasi kelas anak
+void tugas(){							>>method pekerja
+    System.out.println("sekolah");				>>menampilkan
+    System.out.println("berbakti kepada orang tua ");		>>menampilkan
+}
+void lakiLaki(){						>>method lakiLaki						
+    System.out.println("sedikit nakal");			>>menampilkan
+    System.out.println("jati diri");				>>menampilkan
+}	
+ void perempuan(){						>>method perempuan
+     System.out.println("rajin belajar");			>>menampilkan
+     System.out.println("manja");				>>menampilkan
+ }       
+}
+
+
+}
